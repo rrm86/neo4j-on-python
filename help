@@ -1,0 +1,15 @@
+CREATE RELATIONSHIP
+
+MATCH (fx:Fixo) WHERE fx.Fixo1 = "A=A"
+MATCH (ee:Pessoa) WHERE ee.nome = "Eu" RETURN ee
+create(ee)-[:OBSERVEI]->(fx)
+
+CREATE NODE
+
+create(tema:Tema{titulo:'Musica'})
+
+Get all relationships for a node 
+Ask Question
+
+MATCH (a:Pessoa {nome: 'Maria'})-[r]-(b)
+RETURN r, a, b
